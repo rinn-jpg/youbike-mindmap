@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>研究計畫書初稿｜工作心智圖</title>
+<style>
+:root{--bg:#f5f7f6;--ink:#1d2b2a;--sub:#5b6b69;--line:#b9c6c3;--card:#fff;
+--c0:#2f6f68;--c1:#b5542f;--c2:#3b5fa8;--c3:#7a4fa0;--c4:#a07a14;--c5:#2e7d4f;--c6:#a8324f;--c7:#566;}
+@media(prefers-color-scheme:dark){:root{--bg:#141a19;--ink:#e6efed;--sub:#97a9a6;--line:#3a4a47;--card:#1c2423;
+--c0:#5fb3a9;--c1:#e08a62;--c2:#7fa1e6;--c3:#b894dc;--c4:#d9b34c;--c5:#6fcf97;--c6:#e8738f;--c7:#9ab;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.6;padding:20px 16px 48px}
+h1{font-size:1.4rem;margin:0 0 4px}
+.hint{color:var(--sub);font-size:.9rem;margin:0 0 18px}
+.bar{display:flex;gap:8px;margin-bottom:18px}
+button{font:inherit;font-size:.85rem;padding:6px 12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;cursor:pointer}
+button:focus-visible,summary:focus-visible{outline:2px solid var(--c0);outline-offset:2px}
+.map{display:flex;gap:0;align-items:stretch;overflow-x:auto;padding-bottom:8px}
+.root{flex:0 0 auto;align-self:center;background:var(--c0);color:#fff;padding:16px 18px;border-radius:14px;max-width:150px;font-weight:700;text-align:center;margin-right:28px}
+.root small{display:block;font-weight:400;font-size:.78rem;opacity:.9;margin-top:6px}
+.branches{display:flex;flex-direction:column;gap:10px;position:relative;padding-left:26px;min-width:560px;flex:1}
+.branches:before{content:"";position:absolute;left:0;top:28px;bottom:28px;border-left:2px solid var(--line)}
+details.b{position:relative;border-left:5px solid var(--col);background:var(--card);border-radius:8px;padding:0}
+details.b:before{content:"";position:absolute;left:-26px;top:24px;width:21px;border-top:2px solid var(--line)}
+summary{cursor:pointer;padding:10px 14px;font-weight:700;list-style:none;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary:before{content:"＋";color:var(--col);font-weight:700}
+details[open]>summary:before{content:"－"}
+.who{font-weight:400;font-size:.8rem;color:var(--col);border:1px solid var(--col);border-radius:20px;padding:0 9px}
+.when{font-weight:400;font-size:.8rem;color:var(--sub)}
+.kids{margin:0;padding:2px 14px 12px 34px;list-style:none}
+.kids>li{position:relative;margin:6px 0;font-size:.93rem}
+.kids>li:before{content:"";position:absolute;left:-16px;top:.8em;width:10px;border-top:1.5px solid var(--col)}
+.kids ul{list-style:none;margin:3px 0 0;padding-left:18px;color:var(--sub);font-size:.86rem}
+.kids ul li{position:relative;margin:2px 0}
+.kids ul li:before{content:"·";position:absolute;left:-12px;color:var(--col)}
+.warn{color:var(--c1)}
+footer{margin-top:22px;color:var(--sub);font-size:.85rem}
+</style>
+</head>
+<body>
+<h1>研究計畫書初稿：工作心智圖</h1>
+<p class="hint">題目：臺北市 YouBike 站點與自行車道的空間近用公平性。點擊分支可展開細項。</p>
+<div class="bar"><button id="o">全部展開</button><button id="c">全部收合</button></div>
+
+<div class="map">
+<div class="root">計畫書初稿<small>12/2（三）23:59 繳交</small></div>
+<div class="branches">
+
+<details class="b" style="--col:var(--c7)" open>
+<summary>0 先決共識會議 <span class="who">全員</span><span class="when">11/24–25，約 1 小時</span></summary>
+<ul class="kids">
+<li>核心概念：傘狀「空間近用公平性」＋面向「站點近用性」「路網串連性」＋需求面「潛在需求人口」
+<ul><li>各寫一句定義，並說明為何不用「平權」</li></ul></li>
+<li>分析單位：以「里」計算，彙整到「區」呈現</li>
+<li>指標定案（見分支 5 的指標表）</li>
+<li>確認資料都拿得到：站點、自行車道、里別人口與所得</li>
+<li>研究問題最終版：兩題都放入「高齡、低所得」等需求人口</li>
+</ul>
+</details>
+
+<details class="b" style="--col:var(--c1)">
+<summary>壹 摘要 <span class="who">B、C</span><span class="when">最後寫，約 300–400 字</span></summary>
+<ul class="kids">
+<li>背景一句、問題一句、方法一句、預期貢獻一句</li>
+<li>關鍵字：公共自行車、自行車道、近用性、公平性、GIS</li>
+<li>等其他章節定稿後再收斂，避免改來改去</li>
+</ul>
+</details>
+
+<details class="b" style="--col:var(--c2)">
+<summary>貳 研究動機與研究問題 <span class="who">B、C</span><span class="when">11/27 前初稿</span></summary>
+<ul class="kids">
+<li>研究背景：由大到小收斂
+<ul><li>公共運輸與移動權 → 公共自行車 → 臺北市 YouBike</li></ul></li>
+<li>為何選臺北市：YouBike 發源地、資料完整、區間差異明顯，可看「資源充足下隱藏的不足」</li>
+<li class="warn">老師意見：補上「社會議題」連結（資源配置不均、弱勢人口的移動機會）</li>
+<li>研究問題（兩題，含需求人口）</li>
+<li>名詞界定：近用性、公平性</li>
+</ul>
+</details>
+
+<details class="b" style="--col:var(--c3)">
+<summary>參-1 文獻回顧：站點與自行車道研究 <span class="who">D、E</span><span class="when">11/27 前初稿</span></summary>
+<ul class="kids">
+<li>桃園市公共自行車與自行車道（張新福等，2025）
+<ul><li>路網三大缺失；站點與車道整合建議</li></ul></li>
+<li>開放街圖分析臺北使用率（趙家芸、王聖鐸，2019）
+<ul><li>站點分布不均的原因：地勢、捷運、中學、河濱車道入口</li></ul></li>
+<li>站點區位優化（涂仁維等，2020）
+<ul><li>設站準則、自變數、LISA、300 公尺相鄰設定（附頁碼）</li></ul></li>
+<li class="warn">每篇都要回答：他們做了什麼？沒處理到什麼？我們補什麼？</li>
+<li>文末一段小結，銜接到公平性</li>
+</ul>
+</details>
+
+<details class="b" style="--col:var(--c4)">
+<summary>參-2 文獻回顧：公平性與近用性 <span class="who">F</span><span class="when">11/26 前先給 D、E</span></summary>
+<ul class="kids">
+<li class="warn">目前最缺，優先找</li>
+<li>已有線索：加拿大城市共享單車公平性、Safe cycling to school、臺北市政府 108 年公平正義報告</li>
+<li>關鍵字組合：bike share equity、spatial accessibility、公平性＋公共自行車</li>
+<li>整理「公平性如何被測量」：自行車公平指數、需求與供給疊合</li>
+<li>連結到「為何這是社會議題」，回應老師意見</li>
+</ul>
+</details>
+
+<details class="b" style="--col:var(--c5)">
+<summary>肆 研究方法 <span class="who">G（D 或 E 支援）</span><span class="when">最重，11/27 前骨架</span></summary>
+<ul class="kids">
+<li>研究架構與流程圖（一張圖）</li>
+<li>分析單位與範圍：臺北市，以里為單位、彙整至區</li>
+<li>指標表：問題 → 概念 → 指標 → 資料
+<ul>
+<li>站點供給：站點密度、每萬人站數</li>
+<li>站點可及：300 公尺緩衝區涵蓋人口比例</li>
+<li>需求：高齡比例、低所得比例（以 TBEI 為基礎，取 2–3 項，Z 分數標準化）</li>
+<li>弱勢人口落在可及範圍外的比例</li>
+<li>串連：站點到最近車道距離；200 公尺內接上車道的站點比例</li>
+</ul></li>
+<li>資料來源與網址：YouBike 即時資訊、TDX 自行車道、里別人口與所得統計</li>
+<li>分析步驟：匯入 GIS → 緩衝區 → 疊合人口 → 彙整到區 → 比較</li>
+<li>進階（寫成預計採用）：網絡距離、吉尼係數、LISA、敏感度分析（200／300／500 公尺）</li>
+<li class="warn">BEI 要找到真正的學術出處再引用，不直接引用 AI 的說明</li>
+</ul>
+</details>
+
+<details class="b" style="--col:var(--c6)">
+<summary>伍 預期結果　陸 需要指導內容 <span class="who">A、G</span><span class="when">11/28 前</span></summary>
+<ul class="kids">
+<li>預期結果：找出近用性落差的區、需優先補強的區、對公共資源配置的政策意涵</li>
+<li>研究限制：未含使用意願、地形、實地調查；區級資料的平均效應</li>
+<li>指導內容：想請老師確認指標選擇、距離門檻、GIS 與統計方法</li>
+</ul>
+</details>
+
+<details class="b" style="--col:var(--c0)">
+<summary>柒 參考文獻 <span class="who">全員</span><span class="when">12/1 前</span></summary>
+<ul class="kids">
+<li>各人引用的文獻按 APA 格式填入共用清單</li>
+<li>A 統一格式、檢查內文引用與文末是否一一對應</li>
+</ul>
+</details>
+
+<details class="b" style="--col:var(--c7)" open>
+<summary>統籌與時程 <span class="who">A</span></summary>
+<ul class="kids">
+<li>11/24–25：開會定案，各章建骨架</li>
+<li>11/26–27：各章初稿；F 的公平性文獻先交付</li>
+<li>11/28–29：A 整合；交叉閱讀，標出邏輯斷裂處</li>
+<li class="warn">11/30（一）12:00 前：Moodle 繳交一頁研究設計進度與提問（B 或 G 負責）</li>
+<li>12/1：依意見微調、格式與參考文獻檢查</li>
+<li class="warn">12/2（三）23:59 前：繳交初稿</li>
+</ul>
+</details>
+
+</div>
+</div>
+<footer>分工為建議，可依組員專長調整；G 的方法章節最重，請及早支援。</footer>
+<script>
+var d=document.querySelectorAll("details.b");
+o.onclick=function(){d.forEach(function(x){x.open=true})};
+c.onclick=function(){d.forEach(function(x){x.open=false})};
+</script>
+</body>
+</html>
